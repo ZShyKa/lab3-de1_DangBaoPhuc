@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Phúc Đặng",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 19.2, "left": 81.64, "attrs": {} },
+    { "type": "board-bmp180", "id": "bmp1", "top": 5.44, "left": -38.14, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 73.2, "left": 32.6, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 60,
+      "left": -46.2,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bmp1:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "bmp1:GND", "esp:CMD", "black", [ "h0" ] ],
+    [ "bmp1:SCL", "esp:22", "green", [ "h0" ] ],
+    [ "bmp1:SDA", "esp:21", "green", [ "h0" ] ],
+    [ "led1:A", "esp:26", "green", [ "v0" ] ],
+    [ "led1:C", "esp:CMD", "green", [ "v0" ] ],
+    [ "bz1:2", "esp:27", "green", [ "h105.05" ] ],
+    [ "bz1:1", "esp:CMD", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
