@@ -3,6 +3,9 @@
 Báo cáo Lab 3 – ESP32 + BMP180 + FreeRTOS + MQTT
 
 # BÁO CÁO LAB 3 – GIÁM SÁT VÀ CẢNH BÁO NGƯỜI CHẠY
+Video kết quả thực nghiệm (bật âm thanh của video)
+
+https://github.com/user-attachments/assets/96a2b9ff-5ebf-44e4-b59d-02327cc498ba
 
 ### 1. Thông tin đề tài
 
@@ -26,11 +29,7 @@ Hệ thống đo **nhiệt độ, áp suất khí quyển và độ cao**, gửi
 Giao diện hiển thị nhiệt độ, áp suất, độ cao, hai biểu đồ theo thời gian thực và các nút điều khiển chế độ, LED, còi cảnh báo. Website sử dụng **MQTT.js** và **Chart.js**.
 
 
-### 5. Video kết quả thực nghiệm
 
-
-
-https://github.com/user-attachments/assets/96a2b9ff-5ebf-44e4-b59d-02327cc498ba
 
 
 
